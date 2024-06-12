@@ -1,0 +1,338 @@
+@font-face {
+    font-family: sfui;
+    src: url(./Font/sfuidisplay.css);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sfui;
+}
+.main-section{
+    width: 100%;
+    height: auto;
+    background-color: rgb(38,78,238);
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+
+.navbar ul {
+    width: 38%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+}
+.navbar ul li a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+}
+.nav-btn{
+    width: 142px;
+    height: 44px;
+    border: 1px solid white;
+    background-color: rgb(38,78,238);
+    border-radius: 5px;
+    color: white;
+    font-size: 0.938rem;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.navbar ul li:last-child{
+    display: none;
+}
+/* navbar end */
+.hero-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 110px;
+}
+
+.left-part{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.left-part h1{
+    font-size: 3.75rem;
+    font-weight: 400;
+    color: white;
+}
+.left-part p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 35px;
+    color: white;
+    opacity: .8;
+    border-left: 2px solid rgba(255, 255, 255, 0.425);
+    padding-left: 20px;
+}
+.hero-btn{
+    width: 177px;
+    height: 61px;
+    background-color: rgb(255,75,54);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.063rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+.right-part{
+    width: 50%;
+    height: auto;
+    }
+.right-part img{
+   width: 100%;
+}
+.icon{
+    width: 550px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.icon-box{
+    width: 75px;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon-box img{
+    width: 65px;
+    height: 60px;
+}
+.icon-box h5{
+    font-size: 1.5rem;
+    opacity: .8;
+    font-weight: 400;
+    color: white;
+}
+/* hero-section end */
+
+
+@media (max-width:768px) {
+    .main-section{
+        width: 100%;
+        height: auto;
+        background-color: rgb(38,78,238);
+    }
+    .navbar{
+        width: 100%;
+        padding-inline: 20px;
+    }
+    
+    .res-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .navbar ul {
+        width: 38%;
+    }
+    .navbar ul li a{
+       display: none;
+    }
+    .nav-btn{
+        width: 129px;
+        height: 38px;
+        font-size: 0.82rem;
+        margin-left: 8px;
+    }
+    .navbar ul li:last-child{
+        display: inline;
+        color: white;
+        font-size: 2rem;
+    }
+    /* navbar end */
+
+    .hero-section{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 20px ;
+    }
+    .hero-box{
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-part{
+        width: 100%;
+        height: auto;
+        display: flex;
+       align-items: center;
+       flex-direction: column;
+        padding-block: 30px;
+    }
+    .left-part h1{
+        font-size: 3.281rem;
+        text-align: center;
+    }
+    .left-part p{
+        font-size: 1.094rem;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 0;
+        padding-inline: 100px;
+    }
+    .left-part p br{
+        display: none;
+    }
+    .hero-btn{
+        width: 155.59px;
+        height: 63px;
+        font-size: 0.93rem;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .right-part{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .icon{
+        width: 500px;
+        height: 100px;
+        margin-right: 0;
+    }
+    .icon-box{
+        width: 75px;
+        height: 93px;
+    }
+    .icon-box img{
+        width: 50px;
+        height: 45px;
+    }
+    .icon-box h5{
+        font-size: 1.313rem;
+    }
+}
+
+
+    /* hero-section end */
+    @media (max-width:480px) {
+        .main-section{
+            width: 100%;
+            height: auto;
+            background-color: rgb(38,78,238);
+        }
+        .navbar{
+            width: 100%;
+            padding-inline: 10px;
+        }
+
+        .res-btn{
+            gap: 5px;
+        }
+       
+        .navbar ul {
+            width: 50%;
+        }
+        .nav-btn{
+            width: 129px;
+            height: 38px;
+            font-size: 0.82rem;
+            margin-left: 8px;
+        }
+        .navbar ul li:last-child{
+            display: inline;
+            color: white;
+            font-size: 1.75rem;
+        }
+        /* navbar end */
+
+        .hero-section{
+            width: 100%;
+            height: auto;
+        }
+        .hero-box{
+            width:100%;
+            height: auto;
+        }
+        .left-part{
+            width: 100%;
+            height: auto;
+            padding-block: 30px;
+        }
+        .left-part h1{
+            font-size: 1.969rem;
+            text-align: center;
+        }
+        .left-part h1 br{
+            display: none;
+        }
+        .left-part p{
+            font-size: 1.094rem;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 0;
+            padding-inline: 20px;
+        }
+        .left-part p br{
+            display: none;
+        }
+        .hero-btn{
+            width: 155.59px;
+            height: 53px;
+            font-size: 0.93rem;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .right-part{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+       
+        .icon{
+            width: 350px;
+            height: 100px;
+            margin-top: 40px;
+            margin-right: 0;
+        }
+        .icon-box{
+            width: 75px;
+            height: 93px;
+        }
+        .icon-box img{
+            width: 50px;
+            height: 45px;
+        }
+        .icon-box h5{
+            font-size: 1.313rem;
+        }
+        /* hero-section end */
+
+    
+}
